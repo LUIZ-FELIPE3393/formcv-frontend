@@ -1,94 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="main.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Bootstrap Test</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="main.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Bootstrap Test</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-secondary" style="margin-bottom: 30px; height: 72px;" >
-    <div class="container-fluid" style="background-color: primary; " >
-      <a class="navbar-brand text-uppercase" href="#" style="margin-left: 60px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b class="text-primary">CV</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <nav class="navbar navbar-expand-lg bg-secondary" style="margin-bottom: 30px; height: 72px;" id="adadf">
+    <div class="container-fluid" style="background-color: primary; ">
+      <a class="navbar-brand text-uppercase" href="#"
+        style="margin-left: 60px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b
+          class="text-primary">CV</b></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link nav-bar" aria-current="page" href="#">Conta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link nav-bar" href="#">Relatórios</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>-->
+      </div>
     </div>
   </nav>
   <div class="container">
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+    <p class="h4">
+      Semana epidemológica: xx
+    </p>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Microárea" aria-label="Microárea">
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Sublocalidade" aria-label="Sublocalidade">
         </div>
+      </div><br>
+    </form>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-mon-tab" data-bs-toggle="tab" data-bs-target="#nav-mon" type="button"
+          role="tab" aria-controls="nav-mon" aria-selected="true">SEG</button>
+        <button class="nav-link" id="nav-tue-tab" data-bs-toggle="tab" data-bs-target="#nav-tue" type="button"
+          role="tab" aria-controls="nav-tue" aria-selected="false">TER</button>
+        <button class="nav-link" id="nav-wed-tab" data-bs-toggle="tab" data-bs-target="#nav-wed" type="button"
+          role="tab" aria-controls="nav-wed" aria-selected="false">QUA</button>
+        <button class="nav-link" id="nav-thu-tab" data-bs-toggle="tab" data-bs-target="#nav-thu" type="button"
+          role="tab" aria-controls="nav-thu" aria-selected="false">QUI</button>
+        <button class="nav-link" id="nav-fri-tab" data-bs-toggle="tab" data-bs-target="#nav-fri" type="button"
+          role="tab" aria-controls="nav-fri" aria-selected="false">SEX</button>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade active" id="nav-seg" role="tabpanel" aria-labelledby="nav-seg-tab" tabindex="0">
+        ...
       </div>
+      <div class="tab-pane fade" id="nav-tue" role="tabpanel" aria-labelledby="nav-tue-tab" tabindex="0">
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-wed" role="tabpanel" aria-labelledby="nav-wed-tab" tabindex="0">
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-thu" role="tabpanel" aria-labelledby="nav-thu-tab" tabindex="0">
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-fri" role="tabpanel" aria-labelledby="nav-fri-tab" tabindex="0">
+        ...
+      </div>
+    </div>
   </div>
-  </div>
-    
-    <script src="app.js"></script>
+
+  <script src="app.js"></script>
 </body>
 <style>
+  .nav-bar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #e1ffe1;
+  }
 </style>
+
 </html>

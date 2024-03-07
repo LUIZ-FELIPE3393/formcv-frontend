@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="main.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Bootstrap Test</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary" style="margin-bottom: 30px; height: 72px;" id="adadf">
+    <div class="container-fluid" style="background-color: primary; ">
+      <a class="navbar-brand text-uppercase" href="#"
+        style="margin-left: 60px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b
+          class="text-primary">CV</b></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-bar" aria-current="page" href="#">Conta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-bar" href="#">Relatórios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <p class="h4">
+      Semana epidemológica: xx
+    </p>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Microárea" aria-label="Microárea">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Sublocalidade" aria-label="Sublocalidade">
+        </div>
+      </div><br>
+    </form>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-mon-tab" data-bs-toggle="tab" data-bs-target="#nav-mon" type="button"
+          role="tab" aria-controls="nav-mon" aria-selected="true">SEG</button>
+        <button class="nav-link" id="nav-tue-tab" data-bs-toggle="tab" data-bs-target="#nav-tue" type="button"
+          role="tab" aria-controls="nav-tue" aria-selected="false">TER</button>
+        <button class="nav-link" id="nav-wed-tab" data-bs-toggle="tab" data-bs-target="#nav-wed" type="button"
+          role="tab" aria-controls="nav-wed" aria-selected="false">QUA</button>
+        <button class="nav-link" id="nav-thu-tab" data-bs-toggle="tab" data-bs-target="#nav-thu" type="button"
+          role="tab" aria-controls="nav-thu" aria-selected="false">QUI</button>
+        <button class="nav-link" id="nav-fri-tab" data-bs-toggle="tab" data-bs-target="#nav-fri" type="button"
+          role="tab" aria-controls="nav-fri" aria-selected="false">SEX</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-mon" role="tabpanel" aria-labelledby="nav-mon-tab" tabindex="0">
+        <br>
+
+        <form class="bg-teriary rounded-5"
+          style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
+          <div class="row">
+            <div class="col-md-4">
+              <label for="input-data_ativ">Data da Atividade:</label>
+              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_quart">Quarteirões Trabalhados:</label>
+              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row">
+            <label for="total_imoveis">Total de imóveis:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
+                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Fechados:</label>
+                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Positivos:</label>
+                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="input-num_checkl">Check-list implantados:</label>
+              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row">
+            <label for="total_imoveis">Monitoramento de Adesão ao Check-list:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Sim:</label>
+                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Não:</label>
+                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Parcial:</label>
+                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row">
+            <label for="total_depositos">Número de Depósitos Inspecionados por Tipo:</label>
+            <div id="total_depositos" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A1</label>
+                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A2</label>
+                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">B</label>
+                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">C</label>
+                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D1</label>
+                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D2</label>
+                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">E:</label>
+                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+
+              </div>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
+              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 40mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
+              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
+              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+
+        </form>
+
+      </div>
+      <div class="tab-pane fade" id="nav-tue" role="tabpanel" aria-labelledby="nav-tue-tab" tabindex="1">
+        <br>
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-wed" role="tabpanel" aria-labelledby="nav-wed-tab" tabindex="2">
+        <br>
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-thu" role="tabpanel" aria-labelledby="nav-thu-tab" tabindex="3">
+        <br>
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-fri" role="tabpanel" aria-labelledby="nav-fri-tab" tabindex="4">
+        <br>
+        ...
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+<style>
+  .nav-bar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #f1fff1;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .small_label {
+    font-size: 16px;
+  }
+</style>
+
+</html>

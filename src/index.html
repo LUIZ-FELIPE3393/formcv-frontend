@@ -8,25 +8,28 @@
   <link rel="stylesheet" href="main.css">
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
   <title>Bootstrap Test</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-secondary" style="margin-bottom: 30px; height: 72px;" id="adadf">
+  <nav class="navbar navbar-expand-lg bg-secondary" style="margin-bottom: 30px; height: 72px;">
     <div class="container-fluid" style="background-color: primary; ">
       <a class="navbar-brand text-uppercase" href="#"
-        style="margin-left: 60px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b
+        style="margin-left: 10px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b
           class="text-primary">CV</b></a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link nav-bar" aria-current="page" href="#">Conta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-bar" href="#">Relatórios</a>
-          </li>
-        </ul>
-      </div>
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20px;">
+        <li class="nav-item">
+          <a class="nav-link nav-bar" aria-current="page" href="#">Conta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-bar" href="#">Relatórios</a>
+        </li>
+      </ul>
     </div>
   </nav>
   <div class="container">
@@ -45,65 +48,36 @@
     </form>
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-mon-tab" data-bs-toggle="tab" data-bs-target="#nav-mon" type="button"
-          role="tab" aria-controls="nav-mon" aria-selected="true">SEG</button>
-        <button class="nav-link" id="nav-tue-tab" data-bs-toggle="tab" data-bs-target="#nav-tue" type="button"
-          role="tab" aria-controls="nav-tue" aria-selected="false">TER</button>
-        <button class="nav-link" id="nav-wed-tab" data-bs-toggle="tab" data-bs-target="#nav-wed" type="button"
-          role="tab" aria-controls="nav-wed" aria-selected="false">QUA</button>
-        <button class="nav-link" id="nav-thu-tab" data-bs-toggle="tab" data-bs-target="#nav-thu" type="button"
-          role="tab" aria-controls="nav-thu" aria-selected="false">QUI</button>
-        <button class="nav-link" id="nav-fri-tab" data-bs-toggle="tab" data-bs-target="#nav-fri" type="button"
-          role="tab" aria-controls="nav-fri" aria-selected="false">SEX</button>
+        <button class="nav-link active" id="form-mon-tab" data-bs-toggle="tab" data-bs-target="#form-mon" type="button"
+          role="tab" aria-controls="form-mon" aria-selected="true">SEG</button>
+        <button class="nav-link" id="form-tue-tab" data-bs-toggle="tab" data-bs-target="#form-tue" type="button"
+          role="tab" aria-controls="form-tue" aria-selected="false">TER</button>
+        <button class="nav-link" id="form-wed-tab" data-bs-toggle="tab" data-bs-target="#form-wed" type="button"
+          role="tab" aria-controls="form-wed" aria-selected="false">QUA</button>
+        <button class="nav-link" id="form-thu-tab" data-bs-toggle="tab" data-bs-target="#form-thu" type="button"
+          role="tab" aria-controls="form-thu" aria-selected="false">QUI</button>
+        <button class="nav-link" id="form-fri-tab" data-bs-toggle="tab" data-bs-target="#form-fri" type="button"
+          role="tab" aria-controls="form-fri" aria-selected="false">SEX</button>
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-mon" role="tabpanel" aria-labelledby="nav-mon-tab" tabindex="0">
+      <div class="tab-pane fade show active" id="form-mon" role="tabpanel" aria-labelledby="form-mon-tab" tabindex="0">
         <br>
-
-        <form class="row g-3 bg-teriary" style="margin-left: 2cm; margin-right: 2cm; background-color: #61c161;">
-          <div class="col-md-4">
-            <label for="input-data_ativ">Data da Atividade</label> 
-            <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA" aria-label="DD/MM/AAAA">
-          </div>
-          <div class="col-md-4">
-            <label for="input-num_quart">Quarteirões Trabalhados</label>
-            <input id="input-num_quart" type="text" class="form-control" placeholder="N°" aria-label="N°">
-          </div>
-          <div class="col">
-            
-            <div class="row">
-              <div class="col">
-                <label for="input-num_quart">Inpecionados</label>
-                <input id="input-num_quart" type="text" class="form-control" placeholder="N°" aria-label="N°">
-              </div>
-              <div class="col">
-                <label for="input-num_quart">Fechados</label>
-                <input id="input-num_quart" type="text" class="form-control" placeholder="N°" aria-label="N°">
-              </div>
-              <div class="col">
-                <label for="input-num_quart">Positivos</label>
-                <input id="input-num_quart" type="text" class="form-control" placeholder="N°" aria-label="N°">
-              </div>
-            </div>
-          </div>
-          
-        </form>
-
+        <div w3-include-html="form.html"></div>
       </div>
-      <div class="tab-pane fade" id="nav-tue" role="tabpanel" aria-labelledby="nav-tue-tab" tabindex="1">
+      <div class="tab-pane fade" id="form-tue" role="tabpanel" aria-labelledby="form-tue-tab" tabindex="1">
+        <br>
+        
+      </div>
+      <div class="tab-pane fade" id="form-wed" role="tabpanel" aria-labelledby="form-wed-tab" tabindex="2">
         <br>
         ...
       </div>
-      <div class="tab-pane fade" id="nav-wed" role="tabpanel" aria-labelledby="nav-wed-tab" tabindex="2">
+      <div class="tab-pane fade" id="form-thu" role="tabpanel" aria-labelledby="form-thu-tab" tabindex="3">
         <br>
         ...
       </div>
-      <div class="tab-pane fade" id="nav-thu" role="tabpanel" aria-labelledby="nav-thu-tab" tabindex="3">
-        <br>
-        ...
-      </div>
-      <div class="tab-pane fade" id="nav-fri" role="tabpanel" aria-labelledby="nav-fri-tab" tabindex="4">
+      <div class="tab-pane fade" id="form-fri" role="tabpanel" aria-labelledby="form-fri-tab" tabindex="4">
         <br>
         ...
       </div>
@@ -111,12 +85,39 @@
   </div>
 
   <script src="app.js"></script>
+  
 </body>
 <style>
+  .row-odd {
+    background-color: #61c161;
+    outline: 4px solid;
+    outline-color: #61c161;
+  }
+
+  .row-even {
+    background-color: #41a141;
+    outline: 10px solid #41a141;
+  }
+
   .nav-bar {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    color: #e1ffe1;
+    color: #f1fff1;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .small_label {
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    color: #91f191;
   }
 </style>
 

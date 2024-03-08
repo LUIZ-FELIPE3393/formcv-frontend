@@ -1,0 +1,93 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Relatórios</title>
+</head>
+
+<body>
+    <!--Barra de navegação do projeto-->
+    <nav class="navbar navbar-expand-lg bg-secondary" style="margin-bottom: 30px; height: 72px;">
+        <div class="container-fluid" style="background-color: primary; ">
+          <a class="navbar-brand text-uppercase" href="#"
+            style="margin-left: 10px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b
+              class="text-primary">CV</b></a>
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20px;">
+            <li class="nav-item">
+              <a class="nav-link nav-bar" aria-current="page" href="#">Conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar" href="#">Relatórios</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div id="form_new" class="container">
+        <form> <!--Criação de novo relatório semanal-->
+            <h4>Criar novo relatório</h4>
+            <p>
+                Data:<input id="input-log_date" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA"><br>
+            </p>
+        </form>
+        <h4>Relatórios: </h4> <!--Título da tabela-->
+    </div>
+    
+    <!--Seção que contém os relatórios semanais criados -->
+    <div id="form_list" class="container-md bg-secondary rounded-5" style="padding: 10px; border: 30px solid #41a141;">
+        <!--Cabeçalho da tabela-->
+        <div id="tuple-heading" class="row align-items-start tuple-heading">
+            <div class="col-4 tuple-heading-text column">
+                Data
+            </div>
+            <div class="col-3 tuple-heading-text column">
+                Status
+            </div>
+            <div class="col-3 tuple-heading-text column">
+                Verficado
+            </div>
+            <div class="col-1 tuple-heading-text column">
+                Detalhes
+            </div>
+            <div class="col-1 tuple-heading-text column">
+                Eliminar
+            </div>
+        </div>
+        <!--Conteúdo da tabela-->
+        <div id="tuple-data-0" class="row align-items-start tuple-data">
+            <div class="col-4 tuple-heading-text column">
+                16/02/2024
+            </div>
+            <div class="col-3 tuple-heading-text column">
+                Pendente
+            </div>
+            <div class="col-3 tuple-heading-text column">
+                Não
+            </div>
+            <div class="col-1 tuple-heading-text column">
+                <!-- Aqui o usuário é enviado para a tela de edição do relatório semanal -->
+                <a href="rel_semanal.html" style="color: white">D</a>
+            </div>
+            <div class="col-1 tuple-heading-text column">
+                <button style="height: 27px;">E</button>
+                <!-- Deleção de relatório semanal -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

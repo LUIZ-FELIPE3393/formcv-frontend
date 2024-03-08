@@ -1,0 +1,43 @@
+.row-odd {
+    background-color: #61c161;
+    outline: 4px solid;
+    outline-color: #61c161;
+  }
+
+  .row-even {
+    background-color: #41a141;
+    outline: 10px solid #41a141;
+  }
+
+  .nav-bar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #f1fff1;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .small_label {
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    color: #91f191;
+  }
+
+  .tuple-heading-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .column {
+    background-color: #61c161;
+    outline: solid 2px white;
+  }

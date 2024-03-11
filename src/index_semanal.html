@@ -1,8 +1,7 @@
-<html>
-    <!DOCTYPE html>
-    <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,15 +36,24 @@
       </nav>
 
     <div id="form_new" class="container">
-        <form> <!--Criação de novo relatório semanal-->
-            <h4>Criar novo relatório</h4>
-            <p>
-                Data:<input id="input-log_date" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
-                aria-label="DD/MM/AAAA"><br>
-                
-            </p>
+        <h4>Criar novo relatório</h4>
+        <form class="row g-3"> <!--Criação de novo relatório semanal-->
+            <div class="col-auto">
+                <label for="input-log_date" class="form-label" style="color: black;">Data</label>
+            </div>
+            <div class="col-auto">
+                <input id="input-log_date" type="text" class="form-control" style="width: 40mm; display: inline;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">    
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary" id="button-log_date">Novo</button>
+            </div>
         </form>
-        <button id="button-log_date">Novo</button>
+        
+        <br><br>
+
+        <h5 class="text-danger" id="input-log_date-err"><h5><br>
+
         <h4>Relatórios: </h4> <!--Título da tabela-->
     </div>
     
@@ -53,19 +61,19 @@
     <div id="rel_list" class="container-md bg-secondary rounded-5" style="padding: 10px; border: 30px solid #41a141;">
         <!--Cabeçalho da tabela-->
         <div id="tuple-heading" class="row align-items-start tuple-heading">
-            <div class="col-4 tuple-heading-text column">
+            <div class="col-4 tuple-heading-text column text-truncate">
                 Data
             </div>
-            <div class="col-3 tuple-heading-text column">
+            <div class="col-3 tuple-heading-text column text-truncate">
                 Status
             </div>
-            <div class="col-3 tuple-heading-text column">
+            <div class="col-3 tuple-heading-text column text-truncate">
                 Verficado
             </div>
-            <div class="col-1 tuple-heading-text column">
+            <div class="col-1 tuple-heading-text column text-truncate">
                 Detalhes
             </div>
-            <div class="col-1 tuple-heading-text column">
+            <div class="col-1 tuple-heading-text column text-truncate">
                 Eliminar
             </div>
         </div>
@@ -77,6 +85,18 @@
     
     </div>
     <script src="index_semanal.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('keydown',function(e) {
+            if (e.keyIdentifier=='U+000A' || e.keyIdentifier=='Enter' || e.keyCode==13) {
+                if (e.target.nodeName=='INPUT' && e.target.type=='text') {
+                    e.preventDefault();
+    
+                    return false;
+                }
+            }
+        }, true);
+    </script>
+    
 </body>
 
 </html>

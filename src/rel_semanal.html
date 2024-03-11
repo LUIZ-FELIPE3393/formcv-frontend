@@ -66,28 +66,650 @@
     <div class="tab-content" id="nav-tabContent"> <!--Conteúdo das abas-->
       <div class="tab-pane fade show active" id="form-mon" role="tabpanel" aria-labelledby="form-mon-tab" tabindex="0">
         <br>
-        <div w3-include-html="form.html"></div>
+        <form class="bg-teriary rounded-5"
+          style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-data_ativ">Data da Atividade:</label>
+              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_quart">Quarteirões Trabalhados:</label>
+              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Total de imóveis:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
+                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Fechados:</label>
+                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Positivos:</label>
+                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-num_checkl">Check-list implantados:</label>
+              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Monitoramento de Adesão ao Check-list:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Sim:</label>
+                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Não:</label>
+                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Parcial:</label>
+                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <label for="total_depositos row-even-text">Número de Depósitos Inspecionados por Tipo:</label>
+            <div id="total_depositos" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A1</label>
+                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A2</label>
+                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">B</label>
+                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">C</label>
+                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D1</label>
+                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D2</label>
+                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">E:</label>
+                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-odd" >
+            <div class="col-md-4">
+              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
+              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
+              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
+              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+        </form> 
       </div>
       <div class="tab-pane fade" id="form-tue" role="tabpanel" aria-labelledby="form-tue-tab" tabindex="1">
         <br>
-        
+        <form class="bg-teriary rounded-5"
+          style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-data_ativ">Data da Atividade:</label>
+              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_quart">Quarteirões Trabalhados:</label>
+              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Total de imóveis:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
+                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Fechados:</label>
+                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Positivos:</label>
+                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-num_checkl">Check-list implantados:</label>
+              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Monitoramento de Adesão ao Check-list:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Sim:</label>
+                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Não:</label>
+                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Parcial:</label>
+                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <label for="total_depositos row-even-text">Número de Depósitos Inspecionados por Tipo:</label>
+            <div id="total_depositos" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A1</label>
+                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A2</label>
+                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">B</label>
+                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">C</label>
+                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D1</label>
+                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D2</label>
+                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">E:</label>
+                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-odd" >
+            <div class="col-md-4">
+              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
+              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
+              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
+              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+        </form> 
       </div>
       <div class="tab-pane fade" id="form-wed" role="tabpanel" aria-labelledby="form-wed-tab" tabindex="2">
         <br>
-        ...
+        <form class="bg-teriary rounded-5"
+          style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-data_ativ">Data da Atividade:</label>
+              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_quart">Quarteirões Trabalhados:</label>
+              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Total de imóveis:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
+                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Fechados:</label>
+                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Positivos:</label>
+                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-num_checkl">Check-list implantados:</label>
+              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Monitoramento de Adesão ao Check-list:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Sim:</label>
+                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Não:</label>
+                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Parcial:</label>
+                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <label for="total_depositos row-even-text">Número de Depósitos Inspecionados por Tipo:</label>
+            <div id="total_depositos" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A1</label>
+                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A2</label>
+                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">B</label>
+                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">C</label>
+                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D1</label>
+                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D2</label>
+                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">E:</label>
+                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-odd" >
+            <div class="col-md-4">
+              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
+              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
+              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
+              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+        </form> 
       </div>
       <div class="tab-pane fade" id="form-thu" role="tabpanel" aria-labelledby="form-thu-tab" tabindex="3">
         <br>
-        ...
+        <form class="bg-teriary rounded-5"
+          style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-data_ativ">Data da Atividade:</label>
+              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_quart">Quarteirões Trabalhados:</label>
+              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Total de imóveis:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
+                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Fechados:</label>
+                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Positivos:</label>
+                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-num_checkl">Check-list implantados:</label>
+              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Monitoramento de Adesão ao Check-list:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Sim:</label>
+                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Não:</label>
+                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Parcial:</label>
+                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <label for="total_depositos row-even-text">Número de Depósitos Inspecionados por Tipo:</label>
+            <div id="total_depositos" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A1</label>
+                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A2</label>
+                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">B</label>
+                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">C</label>
+                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D1</label>
+                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D2</label>
+                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">E:</label>
+                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-odd" >
+            <div class="col-md-4">
+              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
+              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
+              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
+              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+        </form> 
       </div>
       <div class="tab-pane fade" id="form-fri" role="tabpanel" aria-labelledby="form-fri-tab" tabindex="4">
         <br>
-        ...
+        <form class="bg-teriary rounded-5"
+          style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-data_ativ">Data da Atividade:</label>
+              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
+                aria-label="DD/MM/AAAA">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_quart">Quarteirões Trabalhados:</label>
+              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Total de imóveis:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
+                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Fechados:</label>
+                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Positivos:</label>
+                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <div class="col-md-4">
+              <label for="input-num_checkl">Check-list implantados:</label>
+              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+          <div class="row row-odd">
+            <label for="total_imoveis">Monitoramento de Adesão ao Check-list:</label>
+            <div id="total_imoveis" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Sim:</label>
+                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Não:</label>
+                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">Parcial:</label>
+                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-even">
+            <label for="total_depositos row-even-text">Número de Depósitos Inspecionados por Tipo:</label>
+            <div id="total_depositos" class="col">
+              <div class="row">
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A1</label>
+                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">A2</label>
+                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">B</label>
+                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">C</label>
+                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D1</label>
+                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">D2</label>
+                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+                <div class="col">
+                  <label class="small_label" for="input-num_quart">E:</label>
+                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                    aria-label="N°">
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="row row-odd" >
+            <div class="col-md-4">
+              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
+              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
+              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+            <div class="col-md-4">
+              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
+              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
+                aria-label="N°">
+            </div>
+          </div><br>
+        </form> 
       </div>
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js">
+    includeHTML();
+  </script>
   
 </body>
 <style>

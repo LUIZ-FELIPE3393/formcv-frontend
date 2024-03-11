@@ -23,23 +23,25 @@ function new_relatorio(date_data) {
     tuple.setAttribute("class", "row align-items-start tuple-data");
 
     let tupleContent = 
-    ` <div class=\"col-4 tuple-heading-text column\"> 
+    ` <div class="col-4 tuple-heading-text column"> 
         :date:
-       </div>
-        <div class="col-3 tuple-heading-text column">
-            Pendente
-        </div>
-        <div class="col-3 tuple-heading-text column">
-            Não
-        </div>
-        <div class="col-1 tuple-heading-text column">
-            <!-- Aqui o usuário é enviado para a tela de edição do relatório semanal -->
-            <a href="rel_semanal.html" style="color: white">D</a>
-        </div>
-        <div class="col-1 tuple-heading-text column">
-            <button id="button-remove-:tuple-id:" style="height: 27px;">E</button>
-            <!-- Deleção de relatório semanal -->
-        </div>
+    </div>
+    <div class="col-3 tuple-heading-text column">
+        Pendente
+    </div>
+    <div class="col-3 tuple-heading-text column">
+        Não
+    </div>
+    <div class="col-1 tuple-heading-text column" style="text-align: center;">
+        <!-- Aqui o usuário é enviado para a tela de edição do relatório semanal -->
+        <a href="rel_semanal.html">
+            <img src="../res/lupa.svg" style="height: 20px;"></img>
+        </a>
+    </div>
+    <div class="col-1 tuple-heading-text column" style="text-align: center;">
+            <img id="button-remove-:tuple-id:" src="../res/lixo.svg" style="height: 27px; cursor: pointer;"></img>
+        <!-- Deleção de relatório semanal -->
+    </div>
         `;
     
     tupleContent = tupleContent.replace(":date:", date_data);

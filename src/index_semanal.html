@@ -42,13 +42,15 @@
             <p>
                 Data:<input id="input-log_date" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
                 aria-label="DD/MM/AAAA"><br>
+                
             </p>
         </form>
+        <button id="button-log_date">Novo</button>
         <h4>Relatórios: </h4> <!--Título da tabela-->
     </div>
     
     <!--Seção que contém os relatórios semanais criados -->
-    <div id="form_list" class="container-md bg-secondary rounded-5" style="padding: 10px; border: 30px solid #41a141;">
+    <div id="rel_list" class="container-md bg-secondary rounded-5" style="padding: 10px; border: 30px solid #41a141;">
         <!--Cabeçalho da tabela-->
         <div id="tuple-heading" class="row align-items-start tuple-heading">
             <div class="col-4 tuple-heading-text column">
@@ -68,26 +70,9 @@
             </div>
         </div>
         <!--Conteúdo da tabela-->
-        <div id="tuple-data-0" class="row align-items-start tuple-data">
-            <div class="col-4 tuple-heading-text column">
-                16/02/2024
-            </div>
-            <div class="col-3 tuple-heading-text column">
-                Pendente
-            </div>
-            <div class="col-3 tuple-heading-text column">
-                Não
-            </div>
-            <div class="col-1 tuple-heading-text column">
-                <!-- Aqui o usuário é enviado para a tela de edição do relatório semanal -->
-                <a href="rel_semanal.html" style="color: white">D</a>
-            </div>
-            <div class="col-1 tuple-heading-text column">
-                <button style="height: 27px;">E</button>
-                <!-- Deleção de relatório semanal -->
-            </div>
-        </div>
+    
     </div>
+    <script src="index_semanal.js"></script>
 </body>
 
 </html>

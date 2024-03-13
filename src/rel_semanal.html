@@ -23,7 +23,7 @@
       <a class="navbar-brand text-uppercase" href="#"
         style="margin-left: 10px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-size: 32px;">Form<b
           class="text-primary">CV</b></a>
-      
+
       <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20px;">
         <li class="nav-item">
           <a class="nav-link nav-bar" aria-current="page" href="#">Conta</a>
@@ -41,10 +41,11 @@
     <form>
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Microárea" aria-label="Microárea">
+          <input name="micro_area" type="text" class="form-control" placeholder="Microárea" aria-label="Microárea">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Sublocalidade" aria-label="Sublocalidade">
+          <input name="sub_local" type="text" class="form-control" placeholder="Sublocalidade"
+            aria-label="Sublocalidade">
         </div>
       </div><br>
     </form>
@@ -66,18 +67,18 @@
     <div class="tab-content" id="nav-tabContent"> <!--Conteúdo das abas-->
       <div class="tab-pane fade show active" id="form-mon" role="tabpanel" aria-labelledby="form-mon-tab" tabindex="0">
         <br>
-        <form class="bg-teriary rounded-5"
+        <form class="bg-teriary"
           style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
           <div class="row row-even">
             <div class="col-md-4">
-              <label for="input-data_ativ">Data da Atividade:</label>
-              <input id="input-data_ativ" type="text" class="form-control" style="width: 40mm;" placeholder="DD/MM/AAAA"
-                aria-label="DD/MM/AAAA">
+              <label for="data">Data da Atividade:</label>
+              <input name="data" id="data" type="text" class="form-control" style="width: 40mm;"
+                placeholder="DD/MM/AAAA" aria-label="DD/MM/AAAA">
             </div>
             <div class="col-md-4">
-              <label for="input-num_quart">Quarteirões Trabalhados:</label>
-              <input id="input-num_quart" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                aria-label="N°">
+              <label for="quadras_trabalhadas">Quarteirões Trabalhados:</label>
+              <input name="quadras_trabalhadas" id="quadras_trabalhadas" type="text" class="form-control"
+                style="width: 15mm;" placeholder="N°" aria-label="N°">
             </div>
           </div><br>
           <div class="row row-odd">
@@ -85,28 +86,28 @@
             <div id="total_imoveis" class="col">
               <div class="row">
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">Inpecionados:</label>
-                  <input id="input-num_insp" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="imoveis_inspec">Inpecionados:</label>
+                  <input name="imoveis_inspec" id="imoveis_inspec" type="text" class="form-control" style="width: 15mm;"
+                    placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">Fechados:</label>
-                  <input id="input-num_fech" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="imoveis_fechados">Fechados:</label>
+                  <input name="imoveis_fechados" id="imoveis_fechados" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">Positivos:</label>
-                  <input id="input-num_posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="imoveis_positivo">Positivos:</label>
+                  <input name="imoveis_positivo" id="imoveis_positivo" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
               </div>
             </div>
           </div><br>
           <div class="row row-even">
             <div class="col-md-4">
-              <label for="input-num_checkl">Check-list implantados:</label>
-              <input id="input-num_checkl" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                aria-label="N°">
+              <label for="checklist">Check-list implantados:</label>
+              <input name="checklist" id="checklist" type="text" class="form-control" style="width: 15mm;"
+                placeholder="N°" aria-label="N°">
             </div>
           </div><br>
           <div class="row row-odd">
@@ -114,19 +115,19 @@
             <div id="total_imoveis" class="col">
               <div class="row">
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">Sim:</label>
-                  <input id="input-num_checkl-sim" type="text" class="form-control" style="width: 15mm;"
-                    placeholder="N°" aria-label="N°">
+                  <label class="small_label" for="monit_checklist_sim">Sim:</label>
+                  <input name="monit_checklist_sim" id="monit_checklist_sim" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">Não:</label>
-                  <input id="input-num_checkl-nao" type="text" class="form-control" style="width: 15mm;"
-                    placeholder="N°" aria-label="N°">
+                  <label class="small_label" for="monit_checklist_nao">Não:</label>
+                  <input name="monit_checklist_nao" id="monit_checklist_nao" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">Parcial:</label>
-                  <input id="input-num_checkl-parcial" type="text" class="form-control" style="width: 15mm;"
-                    placeholder="N°" aria-label="N°">
+                  <label class="small_label" for="monit_checklist_parcial">Parcial:</label>
+                  <input name="monit_checklist_parcial" id="monit_checklist_parcial" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
               </div>
             </div>
@@ -136,63 +137,63 @@
             <div id="total_depositos" class="col">
               <div class="row">
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">A1</label>
-                  <input id="input-num_depos-a1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_A1">A1</label>
+                  <input name="nu_dep_inspec_A1" id="nu_dep_inspec_A1" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">A2</label>
-                  <input id="input-num_depos-a2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_A2">A2</label>
+                  <input name="nu_dep_inspec_A2" id="nu_dep_inspec_A2" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">B</label>
-                  <input id="input-num_depos-b" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_B">B</label>
+                  <input name="nu_dep_inspec_B" id="nu_dep_inspec_B" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">C</label>
-                  <input id="input-num_depos-c" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_C">C</label>
+                  <input name="nu_dep_inspec_C" id="nu_dep_inspec_C" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">D1</label>
-                  <input id="input-num_depos-d1" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_D1">D1</label>
+                  <input name="nu_dep_inspec_D1" id="nu_dep_inspec_D1" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">D2</label>
-                  <input id="input-num_depos-d2" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_D2">D2</label>
+                  <input name="nu_dep_inspec_D2" id="nu_dep_inspec_D2" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
                 <div class="col">
-                  <label class="small_label" for="input-num_quart">E:</label>
-                  <input id="input-num_depos-e" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                    aria-label="N°">
+                  <label class="small_label" for="nu_dep_inspec_E">E:</label>
+                  <input name="nu_dep_inspec_E" id="nu_dep_inspec_E" type="text" class="form-control"
+                    style="width: 15mm;" placeholder="N°" aria-label="N°">
                 </div>
               </div>
             </div>
           </div><br>
-          <div class="row row-odd" >
+          <div class="row row-odd">
             <div class="col-md-4">
-              <label for="input-num_dep-elim">Número de Depósitos Eliminados:</label>
-              <input id="input-num_dep-elim" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                aria-label="N°">
+              <label for="nu_dep_eliminado">Número de Depósitos Eliminados:</label>
+              <input name="nu_dep_eliminado" id="nu_dep_eliminado" type="text" class="form-control" style="width: 15mm;"
+                placeholder="N°" aria-label="N°">
             </div>
             <div class="col-md-4">
-              <label for="input-num_dep-posi">Número de Depósitos Positivos:</label>
-              <input id="input-num_dep-posi" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                aria-label="N°">
+              <label for="nu_dep_positivo">Número de Depósitos Positivos:</label>
+              <input name="nu_dep_positivo" id="nu_dep_positivo" type="text" class="form-control" style="width: 15mm;"
+                placeholder="N°" aria-label="N°">
             </div>
             <div class="col-md-4">
-              <label for="input-num_encam">Número de Encaminhamentos para Tratamento:</label>
-              <input id="input-num_encam" type="text" class="form-control" style="width: 15mm;" placeholder="N°"
-                aria-label="N°">
+              <label for="nu_dep_encaminhado+">Número de Encaminhamentos para Tratamento:</label>
+              <input name="nu_dep_encaminhado" id="nu_dep_encaminhado" type="text" class="form-control"
+                style="width: 15mm;" placeholder="N°" aria-label="N°">
             </div>
           </div><br>
-        </form> 
+        </form>
       </div>
-      <div class="tab-pane fade" id="form-tue" role="tabpanel" aria-labelledby="form-tue-tab" tabindex="1">
+	  <div class="tab-pane fade" id="form-tue" role="tabpanel" aria-labelledby="form-tue-tab" tabindex="1">
         <br>
         <form class="bg-teriary rounded-5"
           style="margin-left: 2cm; margin-right: 2cm; border-width: 1cm; border-style: solid; border-color: #61c161; background-color: #61c161;">
@@ -706,10 +707,11 @@
       </div>
     </div>
   </div>
-  
+  </div>
+
 </body>
 <style>
-  
+
 </style>
 
 </html>

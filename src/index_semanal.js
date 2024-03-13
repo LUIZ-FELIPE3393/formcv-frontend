@@ -4,8 +4,7 @@ const errDisplay = document.getElementById('input-log_date-err');
 
 let test_id = 0;
 
-function verifyDate(day, month, year)
-{
+function verifyDate(day, month, year) {
     if (day < 1 || month < 1 || year < 1965 || year > 9999)
         return false;
 
@@ -27,34 +26,33 @@ function convertToDateObj(date_data) {
     //Formato da data DD/MM/AAAA
     let dateArr = date_data.split('/');
 
-    if(dateArr.length < 3)
+    if (dateArr.length < 3)
         return 0;
 
-    if(!verifyDate(parseInt(dateArr[0]), parseInt(dateArr[1]), parseInt(dateArr[2])))
+    if (!verifyDate(parseInt(dateArr[0]), parseInt(dateArr[1]), parseInt(dateArr[2])))
         return 0;
 
     console.log(dateArr);
 
-    let dateCheck = dateArr[2]+"/"+dateArr[1]+"/"+dateArr[0];
-    
+    let dateCheck = dateArr[2] + "/" + dateArr[1] + "/" + dateArr[0];
+
     let dateObj = new Date(dateCheck);
 
     console.log(dateObj);
     console.log(!isNaN(dateObj));
 
-    if (isNaN(dateObj))
-    {
+    if (isNaN(dateObj)) {
         return 0;
     }
 
-    let dateFormated =  ("00" + dateArr[0]).slice(-2) + "/" +
-                        ("00" + dateArr[1]).slice(-2) + "/" +
-                        ("0000" + dateArr[2]).slice(-4);
+    let dateFormated = ("00" + dateArr[0]).slice(-2) + "/" +
+        ("00" + dateArr[1]).slice(-2) + "/" +
+        ("0000" + dateArr[2]).slice(-4);
 
     return dateFormated;
 }
 
-button_logDate.addEventListener('click', function() {
+button_logDate.addEventListener('click', function () {
     let input_logDate = document.getElementById("input-log_date");
 
     new_relatorio(input_logDate.value);
@@ -62,18 +60,18 @@ button_logDate.addEventListener('click', function() {
 });
 
 function remove_relatorio(tuple_id) {
-    content.removeChild(document.getElementById('tuple-data-'+tuple_id));
+    content.removeChild(document.getElementById('tuple-data-' + tuple_id));
 }
 
 function convertDateFormat(dateObj) {
     return (dateObj.getDay()) + "/" + (dateObj.getMonth()) + "/" + dateObj.getFullYear();
 }
 
-function new_relatorio(dateStr) {   
+function new_relatorio(dateStr) {
     let dateFormated = convertToDateObj(dateStr);
     errDisplay.innerText = "";
-    
-    if(dateFormated === 0) {
+
+    if (dateFormated === 0) {
         errDisplay.innerText = "ERRO - Data inválida!";
         return;
     }
@@ -83,8 +81,8 @@ function new_relatorio(dateStr) {
     tuple.setAttribute("id", "tuple-data-" + test_id);
     tuple.setAttribute("class", "row align-items-start tuple-data");
 
-    let tupleContent = 
-    ` <div class="col-4 tuple-heading-text column"> 
+    let tupleContent =
+        ` <div class="col-4 tuple-heading-text column"> 
         :date:
     </div>
     <div class="col-3 tuple-heading-text column">
@@ -104,8 +102,8 @@ function new_relatorio(dateStr) {
         <!-- Deleção de relatório semanal -->
     </div>
     `;
-    
-    
+
+
     tupleContent = tupleContent.replace(":date:", dateFormated);
     tupleContent = tupleContent.replace(":tuple-id:", test_id);
 
@@ -117,7 +115,7 @@ function new_relatorio(dateStr) {
 
     const tuple_id = test_id;
 
-    button_remove.addEventListener('click', function() {
+    button_remove.addEventListener('click', function () {
         remove_relatorio(tuple_id);
     });
 }
